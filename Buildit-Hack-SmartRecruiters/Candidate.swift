@@ -20,7 +20,7 @@ struct Candidate {
         self.surname = surname
         self.email = email
         self.phoneNumber = phoneNumber
-        self.status = status
+        self.status = Status.giveMeARandomStatusPlease()
     }
     
     private func configureSourceData() {

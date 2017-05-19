@@ -44,4 +44,15 @@ enum Status: String {
             return ""
         }
     }
+
+    static func giveMeARandomStatusPlease() -> Status {
+
+        let possibleStatus = ["NEW", "IN-REVIEW", "INTERVIEW", "OFFER", "HIRE", "REJECTED", "WITHDRAWN", "LEAD", "TRANSFERRED"]
+        let randomIndex = Int(arc4random_uniform(UInt32(possibleStatus.count)))
+        let statusValue = possibleStatus[randomIndex]
+
+        let status = Status(rawValue: statusValue) ?? Status(rawValue: "new")
+
+        return status!
+    }
 }

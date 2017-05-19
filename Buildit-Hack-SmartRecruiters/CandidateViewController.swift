@@ -12,6 +12,11 @@ class CandidateViewController: UIViewController {
 
     @IBOutlet weak var createButton: UIButton!
 
+    @IBOutlet weak var firstNameTextfield: UITextField!
+    @IBOutlet weak var lastNameTextfield: UITextField!
+    @IBOutlet weak var emailAddressTextfield: UITextField!
+    @IBOutlet weak var phoneNumberTextfield: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -24,7 +29,14 @@ class CandidateViewController: UIViewController {
     }
 
     @IBAction func submitData() {
-        
+
+        let firstName = firstNameTextfield.text
+        let lastName = lastNameTextfield.text
+        let emailAddress = emailAddressTextfield.text
+        let phoneNumber = phoneNumberTextfield.text
+
+        _ = Candidate(firstName: firstName!, surname: lastName!, email: emailAddress!, phoneNumber: phoneNumber!)
+
     }
 
 }

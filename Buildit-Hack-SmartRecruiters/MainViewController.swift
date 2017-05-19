@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet fileprivate weak var tableView: UITableView!
 
@@ -22,9 +22,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-
-        createCandidateButton.layer.cornerRadius = 5
-        createCandidateButton.clipsToBounds = true
+        self.configureLayout()
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -36,6 +34,10 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         }
     }
 
+    private func configureLayout() {
+
+        createCandidateButton.roundViewWithCorner(5)
+    }
 
     private func fetchCandidates(complete: @escaping DownloadComplete) {
 
@@ -46,12 +48,13 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
             }
             complete()
         }
-        
     }
 
+}
+
+extension MainViewController : UITableViewDataSource {
 
     // MARK: Table view data source
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return candidates.count
     }
@@ -64,5 +67,4 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         return cell
     }
-
 }

@@ -18,5 +18,6 @@ class CandidateTableViewCell: UITableViewCell {
 
         self.firstName.text = candidate.firstName
         self.lastName.text = candidate.surname
+        self.status.text = candidate.status?.statusImage()
     }
 }

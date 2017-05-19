@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class MainViewController: UIViewController, UITableViewDelegate {
 
     @IBOutlet fileprivate weak var tableView: UITableView!
 
@@ -21,45 +21,40 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.fetchStatus {
-
-        }
-
-        configureLayout()
+        
+        self.configureLayout()
 
         tableView.delegate = self
         tableView.dataSource = self
 
-        candidates = [Candidate(firstName: "Juliana", surname: "C", email: "juli.c@gmail.com", phoneNumber: "0044788878787")]
-        tableView.reloadData()
+        //candidates = [Candidate(firstName: "Juliana", surname: "C", email: "juli.c@gmail.com", phoneNumber: "0044788878787", status: "")]
+        
+        self.fetchCandidates {
+            self.tableView.reloadData()
+        }
     }
 
-    func configureLayout() {
+    private func configureLayout() {
+
         createCandidateButton.roundViewWithCorner(5)
     }
 
-    private func fetchStatus(complete: @escaping DownloadComplete) {
-
-        //        self.smartRecruitersService.fetchStatus { (results, error) in
-        //
-        //            print(results)
-        //            print(error)
-        //            complete()
-        //        }
+    private func fetchCandidates(complete: @escaping DownloadComplete) {
 
         self.smartRecruitersService.fetchCandidates { (candidates, error) in
 
             if let results = candidates {
-                print(results)
+                self.candidates = results
             }
             complete()
         }
-        
     }
 
+}
+
+extension MainViewController : UITableViewDataSource {
 
     // MARK: Table view data source
-
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return candidates.count
     }
@@ -72,5 +67,4 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         return cell
     }
-
 }

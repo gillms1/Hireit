@@ -15,8 +15,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        loginButton.layer.cornerRadius = 5
-        loginButton.clipsToBounds = true
+        self.configureLayout()
+    }
+
+    private func configureLayout() {
+
+        loginButton.roundViewWithCorner(5)
     }
 }
 

@@ -27,13 +27,20 @@ class ViewController: UIViewController {
     
     private func fetchStatus(complete: @escaping DownloadComplete) {
         
-        self.smartRecruitersService.fetchStatus { (results, error) in
+//        self.smartRecruitersService.fetchStatus { (results, error) in
+//            
+//            print(results)
+//            print(error)
+//            complete()
+//        }
+        
+        self.smartRecruitersService.fetchCandidates { (candidates, error) in
             
-            
-            
+            if let results = candidates {
+                print(results)
+            }
             complete()
         }
-        
         
     }
     

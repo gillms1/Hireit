@@ -17,16 +17,14 @@ struct SmartRecruitersServiceHelper {
             
             for candidate in candidatesArr {
                 
-                guard let firstName = candidate["firstName"] as? String,
+                if let firstName = candidate["firstName"] as? String,
                       let surname = candidate["lastName"] as? String,
-                      let email = candidate["email"] as? String,
-                    let phoneNumber = candidate["phoneNumber"] as? String
-                else {
-                    break
+                    let email = candidate["email"] as? String {
+                    
+                    let c = Candidate(firstName: firstName, surname: surname, email: email, phoneNumber: "", status: nil)
+                    candidates.append(c)
+                    
                 }
-                
-                let c = Candidate(firstName: firstName, surname: surname, email: email, phoneNumber: phoneNumber, status: nil)
-                candidates.append(c)
             }
             
         }

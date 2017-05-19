@@ -15,7 +15,7 @@ struct Candidate {
     private(set) var phoneNumber: String!
     private(set) var status: Status?
 
-    init(firstName: String, surname: String, email: String, phoneNumber: String, status: Status?) {
+    init(firstName: String, surname: String, email: String, phoneNumber: String, status: Status? = nil) {
         self.firstName = firstName
         self.surname = surname
         self.email = email

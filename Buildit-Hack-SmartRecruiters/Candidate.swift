@@ -12,8 +12,22 @@ struct Candidate {
     private(set) var firstName: String!
     private(set) var surname: String!
     private(set) var email: String!
-    
-    init(firstName: String) {
+    private(set) var phoneNumber: String!
+    private(set) var status: String?
+
+    init(firstName: String, surname: String, email: String, phoneNumber: String, status: String?) {
         self.firstName = firstName
+        self.surname = surname
+        self.email = email
+        self.phoneNumber = phoneNumber
+        self.status = status
+    }
+    
+    private func configureSourceData() {
+        
+        var defaultSourceDictionary = Dictionary<String, String>()
+        defaultSourceDictionary["sourceTypeId"] = "Other"
+        defaultSourceDictionary["sourceSubTypeId"] = "CAMPAIGN"
+        defaultSourceDictionary["sourceId"] = "OTHER"
     }
 }

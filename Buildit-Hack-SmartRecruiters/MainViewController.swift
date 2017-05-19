@@ -25,13 +25,15 @@ class MainViewController: UIViewController, UITableViewDelegate {
 
         }
 
-        createCandidateButton.layer.cornerRadius = 5
-        createCandidateButton.clipsToBounds = true
+        configureLayout()
 
         tableView.delegate = self
         //tableView.dataSource = self as! UITableViewDataSource
     }
 
+    func configureLayout() {
+        createCandidateButton.roundViewWithCorner(5)
+    }
 
     private func fetchStatus(complete: @escaping DownloadComplete) {
 

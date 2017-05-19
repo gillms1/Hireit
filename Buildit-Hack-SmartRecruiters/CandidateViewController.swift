@@ -15,8 +15,12 @@ class CandidateViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        createButton.layer.cornerRadius = 5
-        createButton.clipsToBounds = true
+        configureLayout()
+    }
+
+    func configureLayout() {
+
+        createButton.roundViewWithCorner(5)
     }
 
     @IBAction func submitData() {

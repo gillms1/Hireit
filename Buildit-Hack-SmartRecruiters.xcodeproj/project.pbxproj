@@ -19,10 +19,10 @@
 		A3EA12D41ECEF510001C66E1 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12D31ECEF510001C66E1 /* Status.swift */; };
 		A3EA12D81ECEF953001C66E1 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12D71ECEF953001C66E1 /* StatusViewModel.swift */; };
 		A3EA12DA1ECF1012001C66E1 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12D91ECF1012001C66E1 /* Candidate.swift */; };
-		B9CA1A241ECF0FB60049021A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CA1A231ECF0FB60049021A /* LoginViewController.swift */; };
+		B91ACE771ECF19360074BD6E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ACE761ECF19360074BD6E /* MainViewController.swift */; };
+		B91ACE791ECF26B00074BD6E /* CandidateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ACE781ECF26B00074BD6E /* CandidateViewController.swift */; };
 		BB654EEA1ECF17EB00A429EC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB654EE91ECF17EB00A429EC /* DatabaseManager.swift */; };
 		BB654EEE1ECF1A5700A429EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB654EED1ECF1A5700A429EC /* GoogleService-Info.plist */; };
-		B91ACE771ECF19360074BD6E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ACE761ECF19360074BD6E /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,10 +41,10 @@
 		A3EA12D31ECEF510001C66E1 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		A3EA12D71ECEF953001C66E1 /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		A3EA12D91ECF1012001C66E1 /* Candidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
-		B9CA1A231ECF0FB60049021A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B91ACE761ECF19360074BD6E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		B91ACE781ECF26B00074BD6E /* CandidateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateViewController.swift; sourceTree = "<group>"; };
 		BB654EE91ECF17EB00A429EC /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		BB654EED1ECF1A5700A429EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		B91ACE761ECF19360074BD6E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D71DA75073F2C4BC21BACF19 /* Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Buildit-Hack-SmartRecruiters/Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,6 +109,7 @@
 				A3EA12C41ECEEFEF001C66E1 /* LaunchScreen.storyboard */,
 				A3EA12C71ECEEFEF001C66E1 /* Info.plist */,
 				B91ACE761ECF19360074BD6E /* MainViewController.swift */,
+				B91ACE781ECF26B00074BD6E /* CandidateViewController.swift */,
 			);
 			path = "Buildit-Hack-SmartRecruiters";
 			sourceTree = "<group>";
@@ -259,6 +260,7 @@
 			files = (
 				A3EA12D21ECEF1D6001C66E1 /* SmartRecruitersServiceHelper.swift in Sources */,
 				A3EA12D81ECEF953001C66E1 /* StatusViewModel.swift in Sources */,
+				B91ACE791ECF26B00074BD6E /* CandidateViewController.swift in Sources */,
 				BB654EEA1ECF17EB00A429EC /* DatabaseManager.swift in Sources */,
 				A3EA12BE1ECEEFEF001C66E1 /* ViewController.swift in Sources */,
 				A3EA12BC1ECEEFEF001C66E1 /* AppDelegate.swift in Sources */,

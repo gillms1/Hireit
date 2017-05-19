@@ -8,9 +8,15 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: UIViewController, UITableViewDelegate {
+
+    @IBOutlet fileprivate weak var tableView: UITableView!
+
+    @IBOutlet weak var createCandidateButton: UIButton!
 
     var smartRecruitersService: SmartRecruitersServiceProtocol = SmartRecruitersService()
+
+    var candidates = Array<Candidate>()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +24,12 @@ class MainViewController: UIViewController {
         self.fetchStatus {
 
         }
+
+        createCandidateButton.layer.cornerRadius = 5
+        createCandidateButton.clipsToBounds = true
+
+        tableView.delegate = self
+        //tableView.dataSource = self as! UITableViewDataSource
     }
 
 
@@ -39,5 +51,21 @@ class MainViewController: UIViewController {
         }
         
     }
-    
+
+
+    // MARK: Table view data source
+
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return candidates.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
+            ?? UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: "Cell")
+
+        cell.textLabel?.text = candidates[indexPath.row].firstName
+        return cell
+    }
+
 }

@@ -97,12 +97,99 @@
                     <view key="view" contentMode="scaleToFill" id="WjH-hf-p99">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJC-e3-FmH">
+                                <rect key="frame" x="175" y="66" width="166" height="30"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="166" id="J9u-XB-Vhz"/>
+                                    <constraint firstAttribute="height" constant="30" id="QVq-Ra-aYD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Create Candidate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="f96-Ih-TMZ" kind="show" id="gfV-Gz-ZPl"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xap-ok-GR1">
+                                <rect key="frame" x="16" y="168" width="343" height="479"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="y0S-Qf-0OZ">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y0S-Qf-0OZ" id="ee6-7G-dIn">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candidates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTd-Ow-Jfu">
+                                <rect key="frame" x="16" y="126" width="87" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Evx-Tt-RUk" firstAttribute="top" secondItem="xap-ok-GR1" secondAttribute="bottom" constant="20" id="IPf-Tr-8R6"/>
+                            <constraint firstItem="MTd-Ow-Jfu" firstAttribute="top" secondItem="k1E-en-z6E" secondAttribute="bottom" constant="106" id="Ix5-wf-H7J"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xJC-e3-FmH" secondAttribute="trailing" constant="18" id="L9V-zP-UiP"/>
+                            <constraint firstItem="xJC-e3-FmH" firstAttribute="top" secondItem="k1E-en-z6E" secondAttribute="bottom" constant="46" id="LOC-Uq-gKb"/>
+                            <constraint firstItem="xap-ok-GR1" firstAttribute="leading" secondItem="MTd-Ow-Jfu" secondAttribute="leading" id="Ra4-Ei-cnf"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="xap-ok-GR1" secondAttribute="leading" id="a87-NL-v9d"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="MTd-Ow-Jfu" secondAttribute="leading" id="aYa-Bi-XbH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xap-ok-GR1" secondAttribute="trailing" id="hJx-bp-QEl"/>
+                            <constraint firstItem="xap-ok-GR1" firstAttribute="top" secondItem="MTd-Ow-Jfu" secondAttribute="bottom" constant="21" id="iTe-qa-xQJ"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="createCandidateButton" destination="xJC-e3-FmH" id="Fua-q0-MOa"/>
+                        <outlet property="tableView" destination="xap-ok-GR1" id="5Dl-JP-tJd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AFL-Ai-EG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="116"/>
+            <point key="canvasLocation" x="852" y="115.59220389805098"/>
+        </scene>
+        <!--Candidate View Controller-->
+        <scene sceneID="dW3-7K-yWJ">
+            <objects>
+                <viewController id="f96-Ih-TMZ" customClass="CandidateViewController" customModule="Buildit_Hack_SmartRecruiters" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="amj-wP-RDq"/>
+                        <viewControllerLayoutGuide type="bottom" id="3hr-p4-6zu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="d1m-Lr-eWZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dp-Hn-uuk">
+                                <rect key="frame" x="133" y="546" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Create">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitData" destination="f96-Ih-TMZ" eventType="touchUpInside" id="DTX-J1-60v"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="createButton" destination="6dp-Hn-uuk" id="aHn-aw-QeK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OLq-FM-wTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1717.5999999999999" y="115.59220389805098"/>
         </scene>
     </scenes>
 </document>

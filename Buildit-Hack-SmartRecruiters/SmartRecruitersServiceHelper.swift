@@ -9,24 +9,6 @@ import Foundation
 
 struct SmartRecruitersServiceHelper {
     
-
-    static func parseStatusResult(results: Dictionary<String, Any?>) -> Dictionary<Date, [Status]> {
-        var city = ""
-        var dict = Dictionary<Date, [Status]>()
-        
-        if let cityDict = results["city"] as? Dictionary<String, Any?> {
-            let cityName = cityDict["name"] as! String
-            let cityCountry = cityDict["country"] as! String
-            
-            city = "\(cityName), \(cityCountry)"
-        }
-        
-//        if let listDictArray = results["list"] as? [Dictionary<String, Any>] {
-//            dict = self.processForecastList(forecastList: listDictArray, city: city)
-//        }
-        
-        return dict
-    }
     
     static func parseCandidatesResult(results: Dictionary<String, Any?>) -> [Candidate] {
         var candidates = [Candidate]()
@@ -35,11 +17,15 @@ struct SmartRecruitersServiceHelper {
             
             for candidate in candidatesArr {
                 
-                guard let firstName = candidate["firstName"] as? String else {
+                guard let firstName = candidate["firstName"] as? String,
+                      let surname = candidate["lastName"] as? String,
+                      let email = candidate["email"] as? String,
+                    let phoneNumber = candidate["phoneNumber"] as? String
+                else {
                     break
                 }
                 
-                let c = Candidate(firstName: firstName)
+                let c = Candidate(firstName: firstName, surname: surname, email: email, phoneNumber: phoneNumber, status: nil)
                 candidates.append(c)
             }
             

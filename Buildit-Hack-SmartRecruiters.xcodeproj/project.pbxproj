@@ -24,6 +24,7 @@
 		B91ACE7B1ECF2B340074BD6E /* CandidateTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91ACE7A1ECF2B340074BD6E /* CandidateTableViewCell.swift */; };
 		BB654EEA1ECF17EB00A429EC /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB654EE91ECF17EB00A429EC /* DatabaseManager.swift */; };
 		BB654EEE1ECF1A5700A429EC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB654EED1ECF1A5700A429EC /* GoogleService-Info.plist */; };
+		BB654EF51ECF2C0400A429EC /* UIView+Roundable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB654EF41ECF2C0400A429EC /* UIView+Roundable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		B91ACE7A1ECF2B340074BD6E /* CandidateTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandidateTableViewCell.swift; sourceTree = "<group>"; };
 		BB654EE91ECF17EB00A429EC /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		BB654EED1ECF1A5700A429EC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BB654EF41ECF2C0400A429EC /* UIView+Roundable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+Roundable.swift"; path = "extensions/UIView+Roundable.swift"; sourceTree = "<group>"; };
 		D71DA75073F2C4BC21BACF19 /* Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Buildit-Hack-SmartRecruiters/Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +102,7 @@
 		A3EA12BA1ECEEFEF001C66E1 /* Buildit-Hack-SmartRecruiters */ = {
 			isa = PBXGroup;
 			children = (
+				BB654EF31ECF2B9800A429EC /* Extensions */,
 				BB654EED1ECF1A5700A429EC /* GoogleService-Info.plist */,
 				A3EA12D61ECEF7C5001C66E1 /* Models */,
 				A3EA12D51ECEF7BD001C66E1 /* Service */,
@@ -135,6 +138,14 @@
 				BB654EE91ECF17EB00A429EC /* DatabaseManager.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		BB654EF31ECF2B9800A429EC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB654EF41ECF2C0400A429EC /* UIView+Roundable.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,6 +277,7 @@
 				B91ACE791ECF26B00074BD6E /* CandidateViewController.swift in Sources */,
 				BB654EEA1ECF17EB00A429EC /* DatabaseManager.swift in Sources */,
 				A3EA12BE1ECEEFEF001C66E1 /* ViewController.swift in Sources */,
+				BB654EF51ECF2C0400A429EC /* UIView+Roundable.swift in Sources */,
 				A3EA12BC1ECEEFEF001C66E1 /* AppDelegate.swift in Sources */,
 				A3EA12CE1ECEF139001C66E1 /* Constants.swift in Sources */,
 				B91ACE7B1ECF2B340074BD6E /* CandidateTableViewCell.swift in Sources */,

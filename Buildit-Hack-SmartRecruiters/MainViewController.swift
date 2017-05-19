@@ -25,8 +25,7 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
 
         }
 
-        createCandidateButton.layer.cornerRadius = 5
-        createCandidateButton.clipsToBounds = true
+        configureLayout()
 
         tableView.delegate = self
         tableView.dataSource = self
@@ -35,6 +34,9 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
         tableView.reloadData()
     }
 
+    func configureLayout() {
+        createCandidateButton.roundViewWithCorner(5)
+    }
 
     private func fetchStatus(complete: @escaping DownloadComplete) {
 

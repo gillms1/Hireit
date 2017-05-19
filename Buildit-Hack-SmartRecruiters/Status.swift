@@ -8,8 +8,40 @@
 
 import Foundation
 
-struct Status {
-    private(set) var status: String!
 
-    
+enum Status: String {
+
+    case new = "NEW"
+    case inReview = "IN-REVIEW"
+    case interview = "INTERVIEW"
+    case offer = "OFFER"
+    case hire = "HIRE"
+    case rejected = "REJECTED"
+    case withdrawn = "WITHDRAWN"
+    case lead = "LEAD"
+    case transferred = "TRANSFERRED"
+
+    func statusImage() -> String {
+
+        switch self {
+        case .new:
+            return "🐣"
+        case .inReview:
+            return "😱"
+        case .interview:
+            return "👩‍💻"
+        case .offer:
+            return "💰"
+        case .rejected:
+            return "😭"
+        case .withdrawn:
+            return "☠️"
+        case .lead:
+            return "👨‍👦"
+        case .transferred:
+            return "✈️"
+        default:
+            return ""
+        }
+    }
 }

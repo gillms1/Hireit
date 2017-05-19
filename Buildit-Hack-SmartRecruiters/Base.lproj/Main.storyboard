@@ -113,19 +113,48 @@
                                     <segue destination="f96-Ih-TMZ" kind="show" id="gfV-Gz-ZPl"/>
                                 </connections>
                             </button>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xap-ok-GR1">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="85" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xap-ok-GR1">
                                 <rect key="frame" x="16" y="168" width="343" height="479"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="y0S-Qf-0OZ">
-                                        <rect key="frame" x="0.0" y="28" width="343" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="Cell" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="85" id="y0S-Qf-0OZ" customClass="CandidateTableViewCell" customModule="Buildit_Hack_SmartRecruiters" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="y0S-Qf-0OZ" id="ee6-7G-dIn">
-                                            <rect key="frame" x="0.0" y="0.0" width="343" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="84.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQh-f4-d3D">
+                                                    <rect key="frame" x="17" y="32" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t4i-JV-eWL">
+                                                    <rect key="frame" x="67" y="32" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="IQh-f4-d3D" firstAttribute="leading" secondItem="ee6-7G-dIn" secondAttribute="leadingMargin" constant="9" id="AhU-Rc-ivp"/>
+                                                <constraint firstItem="t4i-JV-eWL" firstAttribute="leading" secondItem="IQh-f4-d3D" secondAttribute="trailing" constant="8" id="B9Z-rc-pHz"/>
+                                                <constraint firstItem="IQh-f4-d3D" firstAttribute="centerY" secondItem="ee6-7G-dIn" secondAttribute="centerY" id="ePA-P7-BPe"/>
+                                                <constraint firstItem="t4i-JV-eWL" firstAttribute="centerY" secondItem="IQh-f4-d3D" secondAttribute="centerY" id="zCz-Dh-YwH"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <accessibility key="accessibilityConfiguration" identifier="Cell"/>
+                                        <connections>
+                                            <outlet property="firstName" destination="IQh-f4-d3D" id="GQs-YM-ctw"/>
+                                            <outlet property="lastName" destination="t4i-JV-eWL" id="7JX-yg-Osm"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="EyD-fA-SSV" id="ncy-8M-JXm"/>
+                                    <outlet property="delegate" destination="EyD-fA-SSV" id="x6B-1q-0Fv"/>
+                                </connections>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Candidates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MTd-Ow-Jfu">
                                 <rect key="frame" x="16" y="126" width="87" height="21"/>

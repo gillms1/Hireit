@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDelegate {
+class MainViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet fileprivate weak var tableView: UITableView!
 
@@ -28,7 +28,10 @@ class MainViewController: UIViewController, UITableViewDelegate {
         configureLayout()
 
         tableView.delegate = self
-        //tableView.dataSource = self as! UITableViewDataSource
+        tableView.dataSource = self
+
+        candidates = [Candidate(firstName: "Juliana", surname: "C", email: "juli.c@gmail.com", phoneNumber: "0044788878787", status: "")]
+        tableView.reloadData()
     }
 
     func configureLayout() {
@@ -63,10 +66,10 @@ class MainViewController: UIViewController, UITableViewDelegate {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell")
-            ?? UITableViewCell(style: UITableViewCellStyle.value1, reuseIdentifier: "Cell")
+        let cell: CandidateTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CandidateTableViewCell
 
-        cell.textLabel?.text = candidates[indexPath.row].firstName
+        cell.configureCell(candidate: candidates[indexPath.row])
+
         return cell
     }
 

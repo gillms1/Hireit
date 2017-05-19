@@ -8,5 +8,6 @@ target 'Buildit-Hack-SmartRecruiters' do
   pod 'Alamofire'
 
   # Pods for Buildit-Hack-SmartRecruiters
-
+  pod 'Firebase/Core'
+  
 end

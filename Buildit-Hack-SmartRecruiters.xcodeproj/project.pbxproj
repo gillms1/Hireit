@@ -1,0 +1,422 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		10C9E2E5ABB86E058F3F5485 /* Pods_Buildit_Hack_SmartRecruiters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9235160D93CAA9EA3D87C0D3 /* Pods_Buildit_Hack_SmartRecruiters.framework */; };
+		A3EA12BC1ECEEFEF001C66E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12BB1ECEEFEF001C66E1 /* AppDelegate.swift */; };
+		A3EA12BE1ECEEFEF001C66E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12BD1ECEEFEF001C66E1 /* ViewController.swift */; };
+		A3EA12C11ECEEFEF001C66E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EA12BF1ECEEFEF001C66E1 /* Main.storyboard */; };
+		A3EA12C31ECEEFEF001C66E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3EA12C21ECEEFEF001C66E1 /* Assets.xcassets */; };
+		A3EA12C61ECEEFEF001C66E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EA12C41ECEEFEF001C66E1 /* LaunchScreen.storyboard */; };
+		A3EA12CE1ECEF139001C66E1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12CD1ECEF138001C66E1 /* Constants.swift */; };
+		A3EA12D01ECEF1BD001C66E1 /* SmartRecruitersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12CF1ECEF1BD001C66E1 /* SmartRecruitersService.swift */; };
+		A3EA12D21ECEF1D6001C66E1 /* SmartRecruitersServiceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12D11ECEF1D6001C66E1 /* SmartRecruitersServiceHelper.swift */; };
+		A3EA12D41ECEF510001C66E1 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12D31ECEF510001C66E1 /* Status.swift */; };
+		A3EA12D81ECEF953001C66E1 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12D71ECEF953001C66E1 /* StatusViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87D7D36C3E4F76BEC221BABC /* Pods-Buildit-Hack-SmartRecruiters.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buildit-Hack-SmartRecruiters.release.xcconfig"; path = "Pods/Target Support Files/Pods-Buildit-Hack-SmartRecruiters/Pods-Buildit-Hack-SmartRecruiters.release.xcconfig"; sourceTree = "<group>"; };
+		9235160D93CAA9EA3D87C0D3 /* Pods_Buildit_Hack_SmartRecruiters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Buildit_Hack_SmartRecruiters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3EA12B81ECEEFEF001C66E1 /* Buildit-Hack-SmartRecruiters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Buildit-Hack-SmartRecruiters.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3EA12BB1ECEEFEF001C66E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3EA12BD1ECEEFEF001C66E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3EA12C01ECEEFEF001C66E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3EA12C21ECEEFEF001C66E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3EA12C51ECEEFEF001C66E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3EA12C71ECEEFEF001C66E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3EA12CD1ECEF138001C66E1 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
+		A3EA12CF1ECEF1BD001C66E1 /* SmartRecruitersService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartRecruitersService.swift; sourceTree = "<group>"; };
+		A3EA12D11ECEF1D6001C66E1 /* SmartRecruitersServiceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SmartRecruitersServiceHelper.swift; sourceTree = "<group>"; };
+		A3EA12D31ECEF510001C66E1 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
+		A3EA12D71ECEF953001C66E1 /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
+		D71DA75073F2C4BC21BACF19 /* Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Buildit-Hack-SmartRecruiters/Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3EA12B51ECEEFEF001C66E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				10C9E2E5ABB86E058F3F5485 /* Pods_Buildit_Hack_SmartRecruiters.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A2EA42668D27C8D060DF2A3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9235160D93CAA9EA3D87C0D3 /* Pods_Buildit_Hack_SmartRecruiters.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1B9B3ED7BC432752E712E67E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D71DA75073F2C4BC21BACF19 /* Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig */,
+				87D7D36C3E4F76BEC221BABC /* Pods-Buildit-Hack-SmartRecruiters.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A3EA12AF1ECEEFEF001C66E1 = {
+			isa = PBXGroup;
+			children = (
+				A3EA12BA1ECEEFEF001C66E1 /* Buildit-Hack-SmartRecruiters */,
+				A3EA12B91ECEEFEF001C66E1 /* Products */,
+				1B9B3ED7BC432752E712E67E /* Pods */,
+				0A2EA42668D27C8D060DF2A3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A3EA12B91ECEEFEF001C66E1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3EA12B81ECEEFEF001C66E1 /* Buildit-Hack-SmartRecruiters.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3EA12BA1ECEEFEF001C66E1 /* Buildit-Hack-SmartRecruiters */ = {
+			isa = PBXGroup;
+			children = (
+				A3EA12D61ECEF7C5001C66E1 /* Models */,
+				A3EA12D51ECEF7BD001C66E1 /* Service */,
+				A3EA12CD1ECEF138001C66E1 /* Constants.swift */,
+				A3EA12BB1ECEEFEF001C66E1 /* AppDelegate.swift */,
+				A3EA12BD1ECEEFEF001C66E1 /* ViewController.swift */,
+				A3EA12BF1ECEEFEF001C66E1 /* Main.storyboard */,
+				A3EA12C21ECEEFEF001C66E1 /* Assets.xcassets */,
+				A3EA12C41ECEEFEF001C66E1 /* LaunchScreen.storyboard */,
+				A3EA12C71ECEEFEF001C66E1 /* Info.plist */,
+			);
+			path = "Buildit-Hack-SmartRecruiters";
+			sourceTree = "<group>";
+		};
+		A3EA12D51ECEF7BD001C66E1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A3EA12CF1ECEF1BD001C66E1 /* SmartRecruitersService.swift */,
+				A3EA12D11ECEF1D6001C66E1 /* SmartRecruitersServiceHelper.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		A3EA12D61ECEF7C5001C66E1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A3EA12D31ECEF510001C66E1 /* Status.swift */,
+				A3EA12D71ECEF953001C66E1 /* StatusViewModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3EA12B71ECEEFEF001C66E1 /* Buildit-Hack-SmartRecruiters */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3EA12CA1ECEEFEF001C66E1 /* Build configuration list for PBXNativeTarget "Buildit-Hack-SmartRecruiters" */;
+			buildPhases = (
+				C0246359A8B25AFF5BC54D0A /* [CP] Check Pods Manifest.lock */,
+				A3EA12B41ECEEFEF001C66E1 /* Sources */,
+				A3EA12B51ECEEFEF001C66E1 /* Frameworks */,
+				A3EA12B61ECEEFEF001C66E1 /* Resources */,
+				311FFB0795EA7463B00C804C /* [CP] Embed Pods Frameworks */,
+				A9001E7B7BE677683853D824 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Buildit-Hack-SmartRecruiters";
+			productName = "Buildit-Hack-SmartRecruiters";
+			productReference = A3EA12B81ECEEFEF001C66E1 /* Buildit-Hack-SmartRecruiters.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3EA12B01ECEEFEF001C66E1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Manprit Singh Gill";
+				TargetAttributes = {
+					A3EA12B71ECEEFEF001C66E1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A3EA12B31ECEEFEF001C66E1 /* Build configuration list for PBXProject "Buildit-Hack-SmartRecruiters" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3EA12AF1ECEEFEF001C66E1;
+			productRefGroup = A3EA12B91ECEEFEF001C66E1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3EA12B71ECEEFEF001C66E1 /* Buildit-Hack-SmartRecruiters */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3EA12B61ECEEFEF001C66E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EA12C61ECEEFEF001C66E1 /* LaunchScreen.storyboard in Resources */,
+				A3EA12C31ECEEFEF001C66E1 /* Assets.xcassets in Resources */,
+				A3EA12C11ECEEFEF001C66E1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		311FFB0795EA7463B00C804C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Buildit-Hack-SmartRecruiters/Pods-Buildit-Hack-SmartRecruiters-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9001E7B7BE677683853D824 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Buildit-Hack-SmartRecruiters/Pods-Buildit-Hack-SmartRecruiters-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0246359A8B25AFF5BC54D0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3EA12B41ECEEFEF001C66E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EA12D21ECEF1D6001C66E1 /* SmartRecruitersServiceHelper.swift in Sources */,
+				A3EA12D81ECEF953001C66E1 /* StatusViewModel.swift in Sources */,
+				A3EA12BE1ECEEFEF001C66E1 /* ViewController.swift in Sources */,
+				A3EA12BC1ECEEFEF001C66E1 /* AppDelegate.swift in Sources */,
+				A3EA12CE1ECEF139001C66E1 /* Constants.swift in Sources */,
+				A3EA12D01ECEF1BD001C66E1 /* SmartRecruitersService.swift in Sources */,
+				A3EA12D41ECEF510001C66E1 /* Status.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A3EA12BF1ECEEFEF001C66E1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3EA12C01ECEEFEF001C66E1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3EA12C41ECEEFEF001C66E1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3EA12C51ECEEFEF001C66E1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3EA12C81ECEEFEF001C66E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3EA12C91ECEEFEF001C66E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3EA12CB1ECEEFEF001C66E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D71DA75073F2C4BC21BACF19 /* Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Buildit-Hack-SmartRecruiters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GAH.Buildit-Hack-SmartRecruiters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		A3EA12CC1ECEEFEF001C66E1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87D7D36C3E4F76BEC221BABC /* Pods-Buildit-Hack-SmartRecruiters.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Buildit-Hack-SmartRecruiters/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "GAH.Buildit-Hack-SmartRecruiters";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3EA12B31ECEEFEF001C66E1 /* Build configuration list for PBXProject "Buildit-Hack-SmartRecruiters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3EA12C81ECEEFEF001C66E1 /* Debug */,
+				A3EA12C91ECEEFEF001C66E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3EA12CA1ECEEFEF001C66E1 /* Build configuration list for PBXNativeTarget "Buildit-Hack-SmartRecruiters" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3EA12CB1ECEEFEF001C66E1 /* Debug */,
+				A3EA12CC1ECEEFEF001C66E1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3EA12B01ECEEFEF001C66E1 /* Project object */;
+}

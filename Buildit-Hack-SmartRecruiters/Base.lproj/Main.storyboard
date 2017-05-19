@@ -54,6 +54,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="EyD-fA-SSV" kind="show" id="OVa-9t-OIe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -70,10 +73,31 @@
                             <constraint firstItem="b6A-xY-rJ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="zSo-NA-AGY"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="kyq-5x-lRj" id="syN-O9-5Vi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-79.200000000000003" y="116.49175412293854"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="3zt-PP-S9M">
+            <objects>
+                <viewController id="EyD-fA-SSV" customClass="MainViewController" customModule="Buildit_Hack_SmartRecruiters" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="k1E-en-z6E"/>
+                        <viewControllerLayoutGuide type="bottom" id="Evx-Tt-RUk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WjH-hf-p99">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AFL-Ai-EG7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="116"/>
         </scene>
     </scenes>
 </document>

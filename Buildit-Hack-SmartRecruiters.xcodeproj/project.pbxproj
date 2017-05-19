@@ -19,6 +19,7 @@
 		A3EA12D41ECEF510001C66E1 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12D31ECEF510001C66E1 /* Status.swift */; };
 		A3EA12D81ECEF953001C66E1 /* StatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12D71ECEF953001C66E1 /* StatusViewModel.swift */; };
 		A3EA12DA1ECF1012001C66E1 /* Candidate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA12D91ECF1012001C66E1 /* Candidate.swift */; };
+		B9CA1A241ECF0FB60049021A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9CA1A231ECF0FB60049021A /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		A3EA12D31ECEF510001C66E1 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		A3EA12D71ECEF953001C66E1 /* StatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewModel.swift; sourceTree = "<group>"; };
 		A3EA12D91ECF1012001C66E1 /* Candidate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candidate.swift; sourceTree = "<group>"; };
+		B9CA1A231ECF0FB60049021A /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D71DA75073F2C4BC21BACF19 /* Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Buildit-Hack-SmartRecruiters/Pods-Buildit-Hack-SmartRecruiters.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -99,6 +101,7 @@
 				A3EA12C21ECEEFEF001C66E1 /* Assets.xcassets */,
 				A3EA12C41ECEEFEF001C66E1 /* LaunchScreen.storyboard */,
 				A3EA12C71ECEEFEF001C66E1 /* Info.plist */,
+				B9CA1A231ECF0FB60049021A /* LoginViewController.swift */,
 			);
 			path = "Buildit-Hack-SmartRecruiters";
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				A3EA12D81ECEF953001C66E1 /* StatusViewModel.swift in Sources */,
 				A3EA12BE1ECEEFEF001C66E1 /* ViewController.swift in Sources */,
 				A3EA12BC1ECEEFEF001C66E1 /* AppDelegate.swift in Sources */,
+				B9CA1A241ECF0FB60049021A /* LoginViewController.swift in Sources */,
 				A3EA12CE1ECEF139001C66E1 /* Constants.swift in Sources */,
 				A3EA12D01ECEF1BD001C66E1 /* SmartRecruitersService.swift in Sources */,
 				A3EA12D41ECEF510001C66E1 /* Status.swift in Sources */,

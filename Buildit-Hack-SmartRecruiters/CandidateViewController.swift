@@ -35,8 +35,17 @@ class CandidateViewController: UIViewController {
         let emailAddress = emailAddressTextfield.text
         let phoneNumber = phoneNumberTextfield.text
 
-        _ = Candidate(firstName: firstName!, surname: lastName!, email: emailAddress!, phoneNumber: phoneNumber!)
+        let candidate = Candidate(firstName: firstName!, surname: lastName!, email: emailAddress!, phoneNumber: phoneNumber!)
 
+        let smartRecruitersService: SmartRecruitersServiceProtocol = SmartRecruitersService()
+
+        smartRecruitersService.createCandidate(candidate: candidate) { (success) in
+            let alert = UIAlertController(title: "Success", message: "Candidate was added", preferredStyle: UIAlertControllerStyle.alert)
+
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated:
+                true, completion: nil)
+        }
     }
 
 }

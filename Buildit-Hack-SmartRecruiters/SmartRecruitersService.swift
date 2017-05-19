@@ -14,7 +14,7 @@ typealias CreateCandidateComplete = (Bool?)->Void
 
 protocol SmartRecruitersServiceProtocol {
     func fetchCandidates(completed: @escaping DownloadCompleteWithCandidates)
-    func createCandidate(completed: @escaping CreateCandidateComplete)
+    func createCandidate(candidate: Candidate, completed: @escaping CreateCandidateComplete)
 }
 
 class SmartRecruitersService : SmartRecruitersServiceProtocol {
@@ -40,7 +40,7 @@ class SmartRecruitersService : SmartRecruitersServiceProtocol {
         }
     }
     
-    func createCandidate(completed: @escaping CreateCandidateComplete) {
+    func createCandidate(candidate: Candidate, completed: @escaping CreateCandidateComplete) {
         var urlString = CANDIDATES_URL
         urlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!
         let createCandidateURL = URL(string: urlString)
@@ -49,10 +49,7 @@ class SmartRecruitersService : SmartRecruitersServiceProtocol {
             "X-SmartToken": API_KEY,
             ]
         
-        let candidate = Candidate(firstName: "HACKIT-TEST2", surname: "HACKIT-TEST2", email: "HACKIT-TEST2@test.com", phoneNumber: "HACKIT-TEST2", status: nil)
-        
         let parameters : [String: String] = ["firstName" : candidate.firstName, "lastName" : candidate.surname, "email" : candidate.email, "phoneNumber" : candidate.phoneNumber ]
-        
         
         Alamofire.request(createCandidateURL!, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { (response:DataResponse<Any>) in
             

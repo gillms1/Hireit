@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UITableViewDelegate {
+class MainViewController: UIViewController {
 
     @IBOutlet fileprivate weak var tableView: UITableView!
 
@@ -65,6 +65,19 @@ extension MainViewController : UITableViewDataSource {
 
         cell.configureCell(candidate: candidates[indexPath.row])
 
+        if indexPath.row % 2 == 0 {
+            cell.backgroundColor = UIColor.init(colorLiteralRed: 0.9, green: 0.9, blue: 0.9, alpha: 1)
+        } else {
+            cell.backgroundColor = UIColor.white
+        }
+
         return cell
+    }
+}
+
+extension MainViewController : UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 40
     }
 }

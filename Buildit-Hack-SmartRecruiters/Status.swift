@@ -41,7 +41,7 @@ enum Status: String {
         case .transferred:
             return "✈️"
         default:
-            return ""
+            return "😆"
         }
     }
 

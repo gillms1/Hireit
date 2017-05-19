@@ -21,36 +21,28 @@ class MainViewController: UIViewController, UITableViewDelegate, UITableViewData
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.fetchStatus {
+        
 
-        }
-
-        configureLayout()
+        createCandidateButton.layer.cornerRadius = 5
+        createCandidateButton.clipsToBounds = true
 
         tableView.delegate = self
         tableView.dataSource = self
 
-        candidates = [Candidate(firstName: "Juliana", surname: "C", email: "juli.c@gmail.com", phoneNumber: "0044788878787")]
-        tableView.reloadData()
+        //candidates = [Candidate(firstName: "Juliana", surname: "C", email: "juli.c@gmail.com", phoneNumber: "0044788878787", status: "")]
+        
+        self.fetchCandidates {
+            self.tableView.reloadData()
+        }
     }
 
-    func configureLayout() {
-        createCandidateButton.roundViewWithCorner(5)
-    }
 
-    private func fetchStatus(complete: @escaping DownloadComplete) {
-
-        //        self.smartRecruitersService.fetchStatus { (results, error) in
-        //
-        //            print(results)
-        //            print(error)
-        //            complete()
-        //        }
+    private func fetchCandidates(complete: @escaping DownloadComplete) {
 
         self.smartRecruitersService.fetchCandidates { (candidates, error) in
 
             if let results = candidates {
-                print(results)
+                self.candidates = results
             }
             complete()
         }

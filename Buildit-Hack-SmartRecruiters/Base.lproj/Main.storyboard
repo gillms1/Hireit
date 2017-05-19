@@ -136,11 +136,19 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UyV-aa-87t">
+                                                    <rect key="frame" x="286" y="31" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="IQh-f4-d3D" firstAttribute="leading" secondItem="ee6-7G-dIn" secondAttribute="leadingMargin" constant="9" id="AhU-Rc-ivp"/>
                                                 <constraint firstItem="t4i-JV-eWL" firstAttribute="leading" secondItem="IQh-f4-d3D" secondAttribute="trailing" constant="8" id="B9Z-rc-pHz"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="UyV-aa-87t" secondAttribute="trailing" constant="7" id="V50-AE-4h3"/>
                                                 <constraint firstItem="IQh-f4-d3D" firstAttribute="centerY" secondItem="ee6-7G-dIn" secondAttribute="centerY" id="ePA-P7-BPe"/>
+                                                <constraint firstItem="UyV-aa-87t" firstAttribute="centerY" secondItem="ee6-7G-dIn" secondAttribute="centerY" id="sNm-eU-enh"/>
                                                 <constraint firstItem="t4i-JV-eWL" firstAttribute="centerY" secondItem="IQh-f4-d3D" secondAttribute="centerY" id="zCz-Dh-YwH"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -148,6 +156,7 @@
                                         <connections>
                                             <outlet property="firstName" destination="IQh-f4-d3D" id="GQs-YM-ctw"/>
                                             <outlet property="lastName" destination="t4i-JV-eWL" id="7JX-yg-Osm"/>
+                                            <outlet property="status" destination="UyV-aa-87t" id="Bxe-jD-tCJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

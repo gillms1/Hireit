@@ -12,6 +12,7 @@ class CandidateTableViewCell: UITableViewCell {
 
     @IBOutlet weak var firstName: UILabel!
     @IBOutlet weak var lastName: UILabel!
+    @IBOutlet weak var status: UILabel!
 
     func configureCell(candidate: Candidate) {
 

@@ -29,6 +29,10 @@ class MainViewController: UIViewController {
 
         //candidates = [Candidate(firstName: "Juliana", surname: "C", email: "juli.c@gmail.com", phoneNumber: "0044788878787", status: "")]
         
+
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
         self.fetchCandidates {
             self.tableView.reloadData()
         }

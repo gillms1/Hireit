@@ -61,9 +61,16 @@
                                     <segue destination="EyD-fA-SSV" kind="show" id="OVa-9t-OIe"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hireit" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zUy-Jd-Vbf">
+                                <rect key="frame" x="157.5" y="118" width="61.5" height="29"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zUy-Jd-Vbf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Lq-EA-oZb"/>
                             <constraint firstItem="fZ1-y8-j1i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="5oW-S6-ncl"/>
                             <constraint firstItem="xGm-CY-c3e" firstAttribute="leading" secondItem="fZ1-y8-j1i" secondAttribute="leading" id="DAE-0z-NX7"/>
                             <constraint firstItem="xrS-vf-yEW" firstAttribute="width" secondItem="fZ1-y8-j1i" secondAttribute="width" id="Ksj-vI-990"/>
@@ -73,6 +80,7 @@
                             <constraint firstItem="xGm-CY-c3e" firstAttribute="top" secondItem="fZ1-y8-j1i" secondAttribute="bottom" constant="17" id="eGD-Be-sr0"/>
                             <constraint firstItem="xrS-vf-yEW" firstAttribute="leading" secondItem="xGm-CY-c3e" secondAttribute="leading" id="n7u-mP-g6c"/>
                             <constraint firstItem="b6A-xY-rJ7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="130" id="omU-BP-ThJ"/>
+                            <constraint firstItem="zUy-Jd-Vbf" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="54" id="pra-99-04Q"/>
                             <constraint firstItem="kyq-5x-lRj" firstAttribute="top" secondItem="xrS-vf-yEW" secondAttribute="bottom" constant="31" id="uw3-iR-S6z"/>
                             <constraint firstItem="fZ1-y8-j1i" firstAttribute="top" secondItem="b6A-xY-rJ7" secondAttribute="bottom" constant="10" id="xfF-Tz-Haq"/>
                             <constraint firstItem="b6A-xY-rJ7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="18" id="zSo-NA-AGY"/>
@@ -85,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="620" y="116"/>
+            <point key="canvasLocation" x="620" y="115.59220389805098"/>
         </scene>
         <!--Candidates-->
         <scene sceneID="3zt-PP-S9M">
